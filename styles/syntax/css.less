@@ -1,0 +1,63 @@
+.syntax--source.syntax--css {
+
+  .syntax--punctuation {
+    &.syntax--separator,
+    &.syntax--terminator {
+      color: @syntax-text-color;
+    }
+    &.syntax--property-list.syntax--begin,
+    &.syntax--property-list.syntax--end {
+      color: @base16;
+    }
+    &.syntax--section.syntax--function {
+      color: @base20;
+    }
+  }
+
+  .syntax--entity.syntax--name {
+    color: @base15;
+  }
+  .syntax--attribute-name.syntax--class,
+  .syntax--id {
+    color: @base14;
+  }
+  .syntax--pseudo-element,
+  .syntax--pseudo-class {
+    color: @base16;
+  }
+
+  .syntax--property-value {
+    color: @base20;
+  }
+  .syntax--constant.syntax--numeric {
+    color: @base20;
+    .syntax--unit {
+      color: darken(@base20, 1%);
+    }
+  }
+  .syntax--rgb-value {
+    color: @base20;
+  }
+  .syntax--support.syntax--constant {
+    color: @base20;
+    &.syntax--media {
+      color: @base17;
+    }
+  }
+
+  .syntax--keyword.syntax--important {
+    color: @base17;
+  }
+
+}
+
+
+// Less/Sass should have their own files,
+// but for just a single override, here should be fine too
+
+.syntax--source.syntax--less,
+.syntax--source.syntax--scss {
+  .syntax--keyword.syntax--unit {
+    color: @base20;
+  }
+}
