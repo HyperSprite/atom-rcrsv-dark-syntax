@@ -1,7 +1,7 @@
 {
   "name": "rcrsv-dark-syntax",
   "theme": "syntax",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A dark red syntax theme",
   "repository": "https://github.com/HyperSprite/atom-rcrsv-dark-syntax",
   "license": "MIT",
