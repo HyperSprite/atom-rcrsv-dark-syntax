@@ -4,7 +4,7 @@
   }
 
   .syntax--comma {
-    color: @syntax-text-color;
+    color: darken(@syntax-text-color, 40%);
   }
 
   .syntax--support.syntax--class {
@@ -71,7 +71,7 @@
   }
 
   .syntax--constant.syntax--numeric {
-    color: @syntax-text-color;
+    color: @base10;
   }
 
   .syntax--punctuation.syntax--terminator.syntax--statement {
@@ -81,15 +81,10 @@
   .syntax--meta.syntax--delimiter.syntax--method.syntax--period {
     color: @syntax-text-color;
   }
-  .syntax--meta.syntax--brace.syntax--square {
-    color: @base15;
-  }
-  .syntax--meta.syntax--brace.syntax--curly {
-    color: @base15;
-  }
-
+  .syntax--meta.syntax--brace.syntax--square,
+  .syntax--meta.syntax--brace.syntax--curly,
   .syntax--meta.syntax--brace.syntax--round {
-    color: @base15;
+    color: lighten(@base15, 12%);
   }
 
   .syntax--definition.syntax--begin.syntax--curly,
@@ -129,5 +124,5 @@
 .syntax--entity.syntax--name.syntax--function.syntax--js,
 .syntax--storage.syntax--function.syntax--arrow.syntax--js,
 .syntax--entity.syntax--function.syntax--method.syntax--js {
-  color: darken(@base15, 3%);
+  color: darken(@base10, 4%);
 }

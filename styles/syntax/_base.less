@@ -10,16 +10,16 @@
 .syntax--string {
   color: @base14;
   &.syntax--regexp {
-    color: darken(@base14, 2%);
+    color: darken(@base14, 6%);
   }
 }
 
 .syntax--constant {
-  &.syntax--numeric {
-    color: @base15;
-  }
   &.syntax--language {
     color: @base14;
+  }
+  &.syntax--numeric {
+    color: @base10;
   }
   &.syntax--character,
   &.syntax--other,
@@ -96,5 +96,8 @@
 }
 atom-text-editor.editor .bracket-matcher .region {
   border: 1px solid @base22;
+  border-bottom: 2px solid @base22;
+  border-top: 2px solid @base22;
+  border-radius: 1px;
   z-index: 100;
 }
